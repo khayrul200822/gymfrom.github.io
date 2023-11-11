@@ -1,0 +1,160 @@
+    /* poppins font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    /*useful color here*/
+    :root{
+        --gray-color: #202020;
+        --button-color: #50D890;
+    }
+    
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+      }
+    
+
+    section#gymForm_section{
+        padding:  80px 0;
+        background-color:black ;
+        color: white;
+    }
+    section#gymForm_section .gymForm_title{
+        padding: 0px 15px;
+        background-color: var(--gray-color);
+        
+        
+    }
+    section#gymForm_section .gymForm_title h2{
+        font-size: 25px;
+    }
+    /* section#gymForm_section .gymForm_wrapper .buttonTabs{
+        border-right: 1px solid var(--gray-color);
+    } */
+    section#gymForm_section .gymForm_wrapper .border_left{
+        border-left: 1px solid var(--gray-color);
+      
+    }
+   
+    section#gymForm_section .gymForm_wrapper .buttonTabs li{
+        background-color: var(--gray-color);
+        display: flex;
+        justify-content: center;
+        border: 1px solid transparent;
+        transition: all .3s;
+    }
+    section#gymForm_section .gymForm_wrapper .buttonTabs li:hover{
+        border: 1px solid var(--button-color);
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
+        background: var(--gray-color);
+        outline: none;
+        border: 1px solid transparent;
+        padding: 5px 15px;
+        color: white;
+        padding-right: 140px;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input:focus{
+        border: 1px solid var(--button-color);
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
+        padding-right: 271px;
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm .submitButton button{
+        background-color: var(--button-color);
+        padding: 8px 80px;
+        font-weight: 600;
+        color: black;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        transition: all .3s;
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm .submitButton button:hover{
+        background-color: white;
+        color:var(--button-color);
+        transition: .3s;
+        transform: scale(.9);
+      
+        
+        
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
+        width: 357px;
+    }
+
+
+
+     /**************** responsive color here **************/
+    
+     @media only screen and (max-width: 1200px) {
+         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
+        background: var(--gray-color);
+        outline: none;
+        border: none;
+        padding: 5px 15px;
+        color: white;
+        padding-right: 80px;
+        border-radius: 5px;
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
+        padding-right: 211px;
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
+        width: 297px;
+        padding: 5px 15px;
+    }
+     }
+     @media only screen and (max-width: 950px) {
+        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
+            background: var(--gray-color);
+            outline: none;
+            border: none;
+            padding: 5px 15px;
+            color: white;
+            padding-right: 40px;
+            border-radius: 5px;
+        }
+        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
+            padding-right: 171px;
+        }
+        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
+            width: 257px;
+        }
+
+     }
+     @media only screen and (max-width: 850px) {
+        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
+            background: var(--gray-color);
+            outline: none;
+            border: none;
+            padding: 5px 15px;
+            color: white;
+            padding-right: 45px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
+            padding-right: 150px;
+        }
+        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
+            width: 236px;
+         
+        }
+
+     }
+
+     @media only screen and (max-width: 768px) {
+        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
+            font-size: 16px;
+        }
+        section#gymForm_section .gymForm_wrapper form.gymForm {
+            margin: 0px 50px;
+        }
+        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
+            width: 100%;
+            
+         
+        }
+     }
