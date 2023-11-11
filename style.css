@@ -63,12 +63,11 @@
     }
     section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
         width: 100%;
-    appearance: none;
-    box-sizing: border-box;
+ 
     }
-    .single_input_item {
+    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item {
         margin-right: 30px;
-        width: 50%;
+        width: 45%;
     }
     section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input:focus{
         border: 1px solid var(--button-color);
@@ -100,121 +99,10 @@
 
 
      /**************** responsive color here **************/
-     /* @media only screen and (max-width: 1240px) {
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
-       
-            padding-right: 135px;
-            border-radius: 5px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-            padding-right: 266px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 354px;
-            padding: 17.5px 15px;
-           
-        }
-     }
-     */
-     /*
-     @media only screen and (max-width: 1200px) {
-         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
-       
-        padding-right: 60px;
-        border-radius: 5px;
-    }
-    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-        padding-right: 191px;
-    }
-    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-        width: 279px;
-        padding: 5px 15px;
-        font-size: 12px;
-    }
-     }
-     *//*
-     @media only screen and (max-width: 950px) {
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
-            
-            padding-right: 40px;
-            border-radius: 5px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-            padding-right: 171px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 259px;
-            font-size: 12px;
-        }
 
-     }
-     *//*
-     @media only screen and (max-width: 885px) {
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
-          
-            padding-right: 50px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-            padding-right: 164px;
-            font-size: 13px;
-            height: unset;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 243px;
-            font-size: 10px;
-        }
-
-     }
-*//*
-     @media only screen and (max-width: 850px) {
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
-           
-            padding-right: 40px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-            padding-right: 154px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 233px;
-            font-size: 10px;
-        }
-
-     }*/
-     /*
-     @media only screen and (max-width: 810px) {
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
-      
-            
-            padding-right: 25px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-            padding-right: 139px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 218px;
-            font-size: 10px;
-        }
-
-     }*/
-/*
      @media only screen and (max-width: 768px) {
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
-            font-size: 16px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm {
-            margin: 0px 50px;
-            margin-bottom: 50px;
-        }
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
+        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item {
+            margin-right: 0px;
             width: 100%;
-            font-size: 12px;
-            
-         
         }
-     } */
+     } 
