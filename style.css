@@ -1,108 +1,241 @@
-    /* poppins font */
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Inter font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-    /*useful color here*/
-    :root{
-        --gray-color: #202020;
-        --button-color: #50D890;
-        --input-background: #3F3F3F;
-    }
-    
-      *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Poppins', sans-serif;
-      }
-    
+/*useful color here*/
+:root {
+    --gray-color: #202020;
+    --button-color: #50d890;
+    --input-background: #3f3f3f;
+}
 
-    section#gymForm_section{
-        padding-top:  80px;
-        background-color:black ;
-        color: white;
-    }
-    section#gymForm_section .gymForm_title{
-        padding: 0px 15px;
-        background-color: var(--gray-color);
-        
-        
-    }
-    section#gymForm_section .gymForm_title h2{
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+section#gymForm_section {
+    padding-top: 80px;
+    background-color: black;
+    color: white;
+}
+
+section#gymForm_section .gymForm_wrapper .all_listing .search_box input {
+    width: 100%;
+}
+
+div#all-Listings {
+    margin: 0px 35px;
+}
+section#gymForm_section .gymForm_wrapper .all_listing .search_box input {
+    background: var(--input-background);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    padding-left: 50px;
+}
+section#gymForm_section .gymForm_wrapper .all_listing .search_box {
+    max-width: 100%;
+    position: relative;
+}
+section#gymForm_section .gymForm_wrapper .all_listing .search_box .search_icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.list_boxs .single_list_box{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.list_logo_side {
+    background-color: white;
+    padding: 40px 45px;
+}
+.list_logo_side img {
+    max-width:100%;
+}
+.list_content_side {
+    background-color: var(--input-background);
+}
+.list_content_side h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+.list_content_side span {
+    color: #e0e0e0;
+    font-size: 16px;
+}
+.list_info_side {
+    background: linear-gradient(180deg, #ff4600 0%, #ff8a00 100%);
+}
+.list_info_side span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.list_info_side span:nth-child(2) {
+    color: #fff;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.list_box-footer .reset_password a {
+    color: var(--button-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+.list_box-footer .right_side {
+    min-width: 150px;
+    align-items: center;
+}
+/*add listings style here*/
+section#gymForm_section .gymForm_title {
+    padding: 0px 15px;
+    background-color: var(--gray-color);
+}
+
+section#gymForm_section .gymForm_title h2 {
+    font-size: 25px;
+}
+
+section#gymForm_section .gymForm_wrapper .border_left {
+    border-left: 1px solid var(--gray-color);
+    min-height: 105vh;
+}
+
+section#gymForm_section .gymForm_wrapper .buttonTabs li {
+    background-color: var(--gray-color);
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+section#gymForm_section .gymForm_wrapper .buttonTabs li:hover {
+    border: 1px solid var(--button-color);
+}
+
+section#gymForm_section .gymForm_wrapper form.gymForm {
+    margin-left: 35px;
+    margin-bottom: 50px;
+    margin-right: 35px;
+}
+
+section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,
+select {
+    background: var(--input-background);
+    outline: none;
+    border: 1px solid transparent;
+    padding: 17.5px 15px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s;
+    max-width: 100%;
+}
+
+section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select {
+    width: 100%;
+}
+
+section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item {
+    margin-right: 30px;
+    width: 45%;
+}
+
+section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input:focus {
+    border: 1px solid var(--button-color);
+}
+
+section#gymForm_section .gymForm_wrapper form.gymForm .submitButton button {
+    background-color: var(--button-color);
+    padding: 8px 80px;
+    font-weight: 600;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+section#gymForm_section .gymForm_wrapper form.gymForm .submitButton button:hover {
+    background-color: white;
+    color: var(--button-color);
+    transition: 0.3s;
+    transform: scale(0.9);
+}
+
+section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile {
+    padding: 17.5px 10px;
+    font-size: 12px;
+}
+
+/**************** responsive color here **************/
+@media only screen and (max-width: 1140px) {
+    .list_content_side h2 {
         font-size: 25px;
+        font-weight: 400;
     }
-
-    section#gymForm_section .gymForm_wrapper .border_left{
-        border-left: 1px solid var(--gray-color);
-        min-height: 105vh;
-      
-    }
-   
-    section#gymForm_section .gymForm_wrapper .buttonTabs li{
-        background-color: var(--gray-color);
-        display: flex;
-        justify-content: center;
-        border: 1px solid transparent;
-        transition: all .3s;
-    }
-    section#gymForm_section .gymForm_wrapper .buttonTabs li:hover{
-        border: 1px solid var(--button-color);
-    }
-    section#gymForm_section .gymForm_wrapper form.gymForm{
-        margin-left: 35px;
-        margin-bottom: 50px;
-        margin-right: 35px;
-    }
-    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
-        background: var(--input-background);
-        outline: none;
-        border: 1px solid transparent;
-        padding: 17.5px 15px;
-        color: white;
-        border-radius: 10px;
-        transition: all .3s;
-        max-width: 100%;
-    }
-    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-        width: 100%;
- 
-    }
-    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item {
-        margin-right: 30px;
-        width: 45%;
-    }
-    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input:focus{
-        border: 1px solid var(--button-color);
-    }
-  
-    section#gymForm_section .gymForm_wrapper form.gymForm .submitButton button{
-        background-color: var(--button-color);
-        padding: 8px 80px;
-        font-weight: 600;
-        color: black;
-        border: 1px solid transparent;
-        border-radius: 50px;
-        transition: all .3s;
-    }
-    section#gymForm_section .gymForm_wrapper form.gymForm .submitButton button:hover{
-        background-color: white;
-        color:var(--button-color);
-        transition: .3s;
-        transform: scale(.9);
-      
-        
-        
-    }
-    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-      padding: 17.5px 10px;
+    .list_content_side span {
+        color: #e0e0e0;
         font-size: 12px;
     }
-
-
-
-     /**************** responsive color here **************/
-
-     @media only screen and (max-width: 768px) {
-        section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item {
-            margin-right: 0px;
-            width: 100%;
-        }
-     } 
+    .list_info_side span:nth-child(2) {
+       
+        font-size: 25px;
+        
+       
+    }
+    .list_logo_side {
+        background-color: white;
+        padding: 30px 30px;
+    }
+    .list_box-footer .reset_password a {
+       
+        font-size: 14px;
+    }
+    .list_info_side span {
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+@media only screen and (max-width: 820) {
+    .list_content_side h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width: 768px) {
+    section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .list_content_side h2 {
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .list_info_side span:nth-child(2) {
+       
+        font-size: 40px;
+       
+    }
+}
+@media only screen and (max-width: 640px) {
+    .list_content_side h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .list_info_side span:nth-child(2) {
+       
+        font-size: 20px;
+       
+    }
+    .list_logo_side {
+        background-color: white;
+        padding: 30px 30px;
+    }
+}

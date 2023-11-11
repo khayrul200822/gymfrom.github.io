@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <!-- main css file here -->
     <link rel="stylesheet" href="style.css">
     <!--bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
+
 <body>
     <section id="gymForm_section">
         <!--from title-->
@@ -22,38 +25,145 @@
                     <div class="col-12 col-md-4 px-0">
 
                         <!--Tabs here-->
-                        <ul class="buttonTabs pt-5 px-5">
-                            <li class="list-unstyled py-3 px-4 mb-3">All Listings</li>
-                            <li class="list-unstyled py-3 px-4 mb-3">Add Listings</li>
+                        <ul class="buttonTabs pt-5 px-5 nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <li class="list-unstyled py-3 mb-3 active" id="all-Listings-tab" data-bs-toggle="pill"
+                                data-bs-target="#all-Listings" type="button" role="tab" aria-controls="all-Listings"
+                                aria-selected="true">All Listings</li>
+                            <li class="list-unstyled py-3 mb-3" id="add-listings-tab" data-bs-toggle="pill"
+                                data-bs-target="#add-listings" type="button" role="tab" aria-controls="add-listings"
+                                aria-selected="false">Add Listings</li>
                             <li class="list-unstyled py-3 px-4 ">Most Resent</li>
                         </ul>
                     </div>
 
-                    <div class="col-12 col-md-8 border_left">
+                    <div class="col-12 col-md-8 border_left mt-5 tab-content" id="v-pills-tabContent">
+
+                        <div class="all_listing  tab-pane fade show active" id="all-Listings" role="tabpanel"
+                            aria-labelledby="all-Listings-tab" tabindex="0">
+                            <div class="search_box d-flex justify-content-center ">
+                                <input type="search" name="search" id="search" placeholder="Search by name or postcode...">
+                                <div class="search_icon"><img class="img-fluid " src="./img/mingcute_search-line.svg" alt="./img/mingcute_search-line.svg"></div>
+                            </div>
+                            <div class="list_boxs d-flex flex-column ">
+                                <div class="single_list_box d-flex mb-5 flex-column">
+                                    <div class="list_box_upper d-flex justify-content-between">
+
+                                        <div class="list_logo_side d-flex align-items-center justify-content-center  col-3">
+                                            <img class="img-fluid " src="./img/image.png" alt="./img/image.png">
+                                        </div>
+                                        <div class="list_content_side col-6 p-3">
+                                            <h2>Energie Fitness</h2>
+                                            <span>113 Baker St W1U 6RS</span>
+                                        </div>
+                                        <div
+                                            class="list_info_side col-3 d-flex flex-column  align-items-center justify-content-center text-center ">
+                                            <span>from</span><span>£27.99</span><span>/month</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="list_box-footer mt-3 d-flex justify-content-between align-items-center ">
+                                        <div class="reset_password">
+                                            <a href="#">Reset Password</a>
+                                        </div>
+                                        <div class="right_side d-flex justify-content-between">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="57" height="32" viewBox="0 0 57 32" fill="none">
+                                                <g clip-path="url(#clip0_364_601)">
+                                                  <rect width="56.8889" height="32" rx="16" fill="white"/>
+                                                  <path d="M15.9998 0H40.8887C49.7109 0 56.8887 7.17778 56.8887 16C56.8887 24.8222 49.7109 32 40.8887 32H15.9998C7.17756 32 -0.000221252 24.8222 -0.000221252 16C-0.000221252 7.17778 7.17756 0 15.9998 0ZM15.9998 28.4444C18.4611 28.4444 20.8671 27.7146 22.9135 26.3472C24.96 24.9798 26.5551 23.0362 27.497 20.7623C28.4388 18.4884 28.6853 15.9862 28.2051 13.5722C27.7249 11.1582 26.5397 8.94084 24.7993 7.20045C23.0589 5.46006 20.8416 4.27484 18.4276 3.79467C16.0136 3.3145 13.5114 3.56094 11.2375 4.50283C8.96357 5.44472 7.02002 7.03976 5.6526 9.08624C4.28519 11.1327 3.55534 13.5387 3.55534 16C3.55886 19.2994 4.87111 22.4626 7.20412 24.7957C9.53715 27.1287 12.7004 28.4409 15.9998 28.4444Z" fill="#3F3F3F"/>
+                                                </g>
+                                                <defs>
+                                                  <clipPath id="clip0_364_601">
+                                                    <rect width="56.8889" height="32" rx="16" fill="white"/>
+                                                  </clipPath>
+                                                </defs>
+                                              </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M16.667 8.75V9.16667H23.3337V8.75C23.3337 7.86594 22.9825 7.0181 22.3573 6.39298C21.7322 5.76785 20.8844 5.41667 20.0003 5.41667C19.1163 5.41667 18.2684 5.76785 17.6433 6.39298C17.0182 7.0181 16.667 7.86594 16.667 8.75ZM14.5837 9.16667V8.75C14.5837 7.31341 15.1543 5.93566 16.1702 4.91984C17.186 3.90401 18.5637 3.33333 20.0003 3.33333C21.4369 3.33333 22.8147 3.90401 23.8305 4.91984C24.8463 5.93566 25.417 7.31341 25.417 8.75V9.16667H34.792C35.0683 9.16667 35.3332 9.27641 35.5286 9.47176C35.7239 9.66711 35.8337 9.93207 35.8337 10.2083C35.8337 10.4846 35.7239 10.7496 35.5286 10.9449C35.3332 11.1403 35.0683 11.25 34.792 11.25H32.3612L30.6945 31.13C30.5679 32.6397 29.8787 34.0467 28.7635 35.0722C27.6484 36.0976 26.1886 36.6667 24.6737 36.6667H15.327C13.8122 36.6665 12.3526 36.0973 11.2377 35.0719C10.1227 34.0464 9.43361 32.6395 9.30699 31.13L7.64033 11.25H5.20866C4.93239 11.25 4.66744 11.1403 4.47209 10.9449C4.27674 10.7496 4.16699 10.4846 4.16699 10.2083C4.16699 9.93207 4.27674 9.66711 4.47209 9.47176C4.66744 9.27641 4.93239 9.16667 5.20866 9.16667H14.5837ZM17.917 16.875C17.917 16.7382 17.89 16.6028 17.8377 16.4764C17.7853 16.35 17.7086 16.2352 17.6119 16.1384C17.5152 16.0417 17.4003 15.965 17.274 15.9126C17.1476 15.8603 17.0121 15.8333 16.8753 15.8333C16.7385 15.8333 16.6031 15.8603 16.4767 15.9126C16.3503 15.965 16.2355 16.0417 16.1388 16.1384C16.042 16.2352 15.9653 16.35 15.9129 16.4764C15.8606 16.6028 15.8337 16.7382 15.8337 16.875V28.9583C15.8337 29.0951 15.8606 29.2306 15.9129 29.357C15.9653 29.4833 16.042 29.5982 16.1388 29.6949C16.2355 29.7916 16.3503 29.8684 16.4767 29.9207C16.6031 29.9731 16.7385 30 16.8753 30C17.0121 30 17.1476 29.9731 17.274 29.9207C17.4003 29.8684 17.5152 29.7916 17.6119 29.6949C17.7086 29.5982 17.7853 29.4833 17.8377 29.357C17.89 29.2306 17.917 29.0951 17.917 28.9583V16.875ZM23.1253 15.8333C22.5503 15.8333 22.0837 16.3 22.0837 16.875V28.9583C22.0837 29.2346 22.1934 29.4996 22.3888 29.6949C22.5841 29.8903 22.8491 30 23.1253 30C23.4016 30 23.6665 29.8903 23.8619 29.6949C24.0572 29.4996 24.167 29.2346 24.167 28.9583V16.875C24.167 16.3 23.7003 15.8333 23.1253 15.8333Z" fill="#FF4600"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="single_list_box d-flex flex-column">
+                                    <div class="list_box_upper d-flex justify-content-between">
+
+                                        <div class="list_logo_side d-flex align-items-center justify-content-center  col-3">
+                                            <img class="img-fluid " src="./img/image.png" alt="./img/image.png">
+                                        </div>
+                                        <div class="list_content_side col-6 p-3">
+                                            <h2>Energie Fitness</h2>
+                                            <span>113 Baker St W1U 6RS</span>
+                                        </div>
+                                        <div
+                                            class="list_info_side col-3 d-flex flex-column  align-items-center justify-content-center text-center ">
+                                            <span>from</span><span>£27.99</span><span>/month</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="list_box-footer mt-3 d-flex justify-content-between align-items-center ">
+                                        <div class="reset_password">
+                                            <a href="#">Reset Password</a>
+                                        </div>
+                                        <div class="right_side d-flex justify-content-between">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="57" height="32" viewBox="0 0 57 32" fill="none">
+                                                <g clip-path="url(#clip0_364_601)">
+                                                  <rect width="56.8889" height="32" rx="16" fill="white"/>
+                                                  <path d="M15.9998 0H40.8887C49.7109 0 56.8887 7.17778 56.8887 16C56.8887 24.8222 49.7109 32 40.8887 32H15.9998C7.17756 32 -0.000221252 24.8222 -0.000221252 16C-0.000221252 7.17778 7.17756 0 15.9998 0ZM15.9998 28.4444C18.4611 28.4444 20.8671 27.7146 22.9135 26.3472C24.96 24.9798 26.5551 23.0362 27.497 20.7623C28.4388 18.4884 28.6853 15.9862 28.2051 13.5722C27.7249 11.1582 26.5397 8.94084 24.7993 7.20045C23.0589 5.46006 20.8416 4.27484 18.4276 3.79467C16.0136 3.3145 13.5114 3.56094 11.2375 4.50283C8.96357 5.44472 7.02002 7.03976 5.6526 9.08624C4.28519 11.1327 3.55534 13.5387 3.55534 16C3.55886 19.2994 4.87111 22.4626 7.20412 24.7957C9.53715 27.1287 12.7004 28.4409 15.9998 28.4444Z" fill="#3F3F3F"/>
+                                                </g>
+                                                <defs>
+                                                  <clipPath id="clip0_364_601">
+                                                    <rect width="56.8889" height="32" rx="16" fill="white"/>
+                                                  </clipPath>
+                                                </defs>
+                                              </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M16.667 8.75V9.16667H23.3337V8.75C23.3337 7.86594 22.9825 7.0181 22.3573 6.39298C21.7322 5.76785 20.8844 5.41667 20.0003 5.41667C19.1163 5.41667 18.2684 5.76785 17.6433 6.39298C17.0182 7.0181 16.667 7.86594 16.667 8.75ZM14.5837 9.16667V8.75C14.5837 7.31341 15.1543 5.93566 16.1702 4.91984C17.186 3.90401 18.5637 3.33333 20.0003 3.33333C21.4369 3.33333 22.8147 3.90401 23.8305 4.91984C24.8463 5.93566 25.417 7.31341 25.417 8.75V9.16667H34.792C35.0683 9.16667 35.3332 9.27641 35.5286 9.47176C35.7239 9.66711 35.8337 9.93207 35.8337 10.2083C35.8337 10.4846 35.7239 10.7496 35.5286 10.9449C35.3332 11.1403 35.0683 11.25 34.792 11.25H32.3612L30.6945 31.13C30.5679 32.6397 29.8787 34.0467 28.7635 35.0722C27.6484 36.0976 26.1886 36.6667 24.6737 36.6667H15.327C13.8122 36.6665 12.3526 36.0973 11.2377 35.0719C10.1227 34.0464 9.43361 32.6395 9.30699 31.13L7.64033 11.25H5.20866C4.93239 11.25 4.66744 11.1403 4.47209 10.9449C4.27674 10.7496 4.16699 10.4846 4.16699 10.2083C4.16699 9.93207 4.27674 9.66711 4.47209 9.47176C4.66744 9.27641 4.93239 9.16667 5.20866 9.16667H14.5837ZM17.917 16.875C17.917 16.7382 17.89 16.6028 17.8377 16.4764C17.7853 16.35 17.7086 16.2352 17.6119 16.1384C17.5152 16.0417 17.4003 15.965 17.274 15.9126C17.1476 15.8603 17.0121 15.8333 16.8753 15.8333C16.7385 15.8333 16.6031 15.8603 16.4767 15.9126C16.3503 15.965 16.2355 16.0417 16.1388 16.1384C16.042 16.2352 15.9653 16.35 15.9129 16.4764C15.8606 16.6028 15.8337 16.7382 15.8337 16.875V28.9583C15.8337 29.0951 15.8606 29.2306 15.9129 29.357C15.9653 29.4833 16.042 29.5982 16.1388 29.6949C16.2355 29.7916 16.3503 29.8684 16.4767 29.9207C16.6031 29.9731 16.7385 30 16.8753 30C17.0121 30 17.1476 29.9731 17.274 29.9207C17.4003 29.8684 17.5152 29.7916 17.6119 29.6949C17.7086 29.5982 17.7853 29.4833 17.8377 29.357C17.89 29.2306 17.917 29.0951 17.917 28.9583V16.875ZM23.1253 15.8333C22.5503 15.8333 22.0837 16.3 22.0837 16.875V28.9583C22.0837 29.2346 22.1934 29.4996 22.3888 29.6949C22.5841 29.8903 22.8491 30 23.1253 30C23.4016 30 23.6665 29.8903 23.8619 29.6949C24.0572 29.4996 24.167 29.2346 24.167 28.9583V16.875C24.167 16.3 23.7003 15.8333 23.1253 15.8333Z" fill="#FF4600"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
                         <!--gym from here-->
-                        <form class="gymForm pt-5">
-                            <div class="inputItems d-flex flex-column  justify-content-center align-items-center flex-md-row mb-4">
+                        <form class="gymForm  tab-pane fade" id="add-listings" role="tabpanel"
+                            aria-labelledby="add-listings-tab" tabindex="0">
+                            <div
+                                class="inputItems d-flex flex-column  justify-content-center align-items-center flex-md-row mb-4">
                                 <div class="single_input_item d-flex flex-column mb-4 mb-md-0">
                                     <label class="mb-2" for="firstName">First Name</label>
-                                    <input type="text" name="firstName" id="firstName" placeholder="Your first name" required> 
+                                    <input type="text" name="firstName" id="firstName" placeholder="Your first name"
+                                        required>
                                 </div>
                                 <div class="single_input_item d-flex justify-content-between me-0   flex-column">
                                     <label class="mb-2" for="lastName">Last Name</label>
-                                <input class="" type="text" name="lastName" id="lastName" placeholder="Your last name" required>
+                                    <input class="" type="text" name="lastName" id="lastName"
+                                        placeholder="Your last name" required>
                                 </div>
                             </div>
-                            <div class="inputItems d-flex flex-column  justify-content-center align-items-center flex-md-row mb-4">
+                            <div
+                                class="inputItems d-flex flex-column  justify-content-center align-items-center flex-md-row mb-4">
                                 <div class="single_input_item d-flex flex-column mb-4 mb-md-0">
                                     <label class="mb-2" for="gymName">Gym Name</label>
-                                    <input type="text" name="gymName" id="gymName" placeholder="Enter gym name" required> 
+                                    <input type="text" name="gymName" id="gymName" placeholder="Enter gym name"
+                                        required>
                                 </div>
                                 <div class="single_input_item d-flex  justify-content-between me-0   flex-column">
                                     <label class="mb-2" for="lastName">Email</label>
-                                <input type="email" name="email" id="lastName" placeholder="Enter your email" required>
+                                    <input type="email" name="email" id="lastName" placeholder="Enter your email"
+                                        required>
                                 </div>
                             </div>
 
-                            <div class="inputItems d-flex flex-column  justify-content-center  align-items-center flex-md-row mb-4">
+                            <div
+                                class="inputItems d-flex flex-column  justify-content-center  align-items-center flex-md-row mb-4">
                                 <div class="single_input_item d-flex flex-column mb-4 mb-md-0">
                                     <label class="mb-2" for="selectItem">Select Services</label>
                                     <select name="selectItem" id="selectItem">
@@ -66,36 +176,43 @@
                                 </div>
                                 <div class="single_input_item d-flex   me-0   flex-column">
                                     <label class="mb-2" for="address">Address</label>
-                                <input type="text" name="address" id="address" placeholder="Enter your Address" required>
+                                    <input type="text" name="address" id="address" placeholder="Enter your Address"
+                                        required>
                                 </div>
                             </div>
 
-                            <div class="inputItems d-flex flex-column  justify-content-center  align-items-center flex-md-row mb-4">
+                            <div
+                                class="inputItems d-flex flex-column  justify-content-center  align-items-center flex-md-row mb-4">
                                 <div class="single_input_item d-flex flex-column mb-4 mb-md-0">
                                     <label class="mb-2" for="gymName">Gym URL</label>
-                                    <input type="text" name="gymName" id="gymName" placeholder="https://www.gym.com" required> 
+                                    <input type="text" name="gymName" id="gymName" placeholder="https://www.gym.com"
+                                        required>
                                 </div>
                                 <div class="single_input_item d-flex  justify-content-between me-0   flex-column">
                                     <label class="mb-2" for="postcode">Postcode</label>
-                                <input type="text" name="postcode" id="postcode" placeholder="01234" required>
+                                    <input type="text" name="postcode" id="postcode" placeholder="01234" required>
                                 </div>
                             </div>
 
-                            <div class="inputItems d-flex flex-column  justify-content-center  align-items-center flex-md-row mb-4">
+                            <div
+                                class="inputItems d-flex flex-column  justify-content-center  align-items-center flex-md-row mb-4">
                                 <div class="single_input_item d-flex flex-column mb-4 mb-md-0">
                                     <label class="mb-2" for="price">Price</label>
-                                    <input type="text" name="price" id="price" placeholder="00.0" required> 
+                                    <input type="text" name="price" id="price" placeholder="00.0" required>
                                 </div>
                                 <div class="single_input_item d-flex  justify-content-between me-0   flex-column">
                                     <label class="mb-2" for="uploadFile">Upload Logo</label>
-                                <input type="file" name="uploadFile" id="uploadFile" placeholder="No file chosen" required>
+                                    <input type="file" name="uploadFile" id="uploadFile" placeholder="No file chosen"
+                                        required>
                                 </div>
                             </div>
-                            
+
                             <div class="submitButton d-flex align-items-center justify-content-center mt-5">
                                 <button>Save</button>
                             </div>
                         </form>
+
+
 
                     </div>
                 </div>
@@ -104,8 +221,10 @@
     </section>
 
 
-
     <!--bootstrap javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
