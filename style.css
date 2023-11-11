@@ -104,7 +104,7 @@
         padding-right: 191px;
     }
     section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-        width: 277px;
+        width: 279px;
         padding: 5px 15px;
         font-size: 12px;
     }
@@ -137,7 +137,7 @@
             height: unset;
         }
         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 241px;
+            width: 243px;
             font-size: 10px;
         }
 
@@ -154,7 +154,7 @@
             padding-right: 154px;
         }
         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 231px;
+            width: 233px;
             font-size: 10px;
         }
 
@@ -171,7 +171,7 @@
             padding-right: 139px;
         }
         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 216px;        
+            width: 218px;
             font-size: 10px;
         }
 
