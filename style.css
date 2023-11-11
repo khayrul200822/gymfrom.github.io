@@ -5,6 +5,7 @@
     :root{
         --gray-color: #202020;
         --button-color: #50D890;
+        --input-background: #3F3F3F;
     }
     
       *{
@@ -15,7 +16,7 @@
     
 
     section#gymForm_section{
-        padding:  80px 0;
+        padding-top:  80px;
         background-color:black ;
         color: white;
     }
@@ -33,6 +34,7 @@
     } */
     section#gymForm_section .gymForm_wrapper .border_left{
         border-left: 1px solid var(--gray-color);
+        min-height: 105vh;
       
     }
    
@@ -46,13 +48,17 @@
     section#gymForm_section .gymForm_wrapper .buttonTabs li:hover{
         border: 1px solid var(--button-color);
     }
+    section#gymForm_section .gymForm_wrapper form.gymForm{
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
     section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,select {
-        background: var(--gray-color);
+        background: var(--input-background);
         outline: none;
         border: 1px solid transparent;
         padding: 5px 15px;
         color: white;
-        padding-right: 140px;
+        padding-right: 120px;
         border-radius: 5px;
         transition: all .3s;
     }
@@ -60,7 +66,7 @@
         border: 1px solid var(--button-color);
     }
     section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-        padding-right: 271px;
+        padding-right: 251px;
     }
     section#gymForm_section .gymForm_wrapper form.gymForm .submitButton button{
         background-color: var(--button-color);
@@ -81,7 +87,8 @@
         
     }
     section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-        width: 357px;
+        width: 339px;
+        font-size: 12px;
     }
 
 
@@ -95,15 +102,16 @@
         border: none;
         padding: 5px 15px;
         color: white;
-        padding-right: 80px;
+        padding-right: 60px;
         border-radius: 5px;
     }
     section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-        padding-right: 211px;
+        padding-right: 191px;
     }
     section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-        width: 297px;
+        width: 277px;
         padding: 5px 15px;
+        font-size: 12px;
     }
      }
      @media only screen and (max-width: 950px) {
@@ -113,14 +121,15 @@
             border: none;
             padding: 5px 15px;
             color: white;
-            padding-right: 40px;
+            padding-right: 25px;
             border-radius: 5px;
         }
         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-            padding-right: 171px;
+            padding-right: 156px;
         }
         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 257px;
+            width: 242px;
+            font-size: 12px;
         }
 
      }
@@ -131,16 +140,16 @@
             border: none;
             padding: 5px 15px;
             color: white;
-            padding-right: 45px;
+            padding-right: 25px;
             border-radius: 5px;
             font-size: 14px;
         }
         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item select{
-            padding-right: 150px;
+            padding-right: 130px;
         }
         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
-            width: 236px;
-         
+            width: 216px;        
+            font-size: 10px;
         }
 
      }
@@ -151,9 +160,11 @@
         }
         section#gymForm_section .gymForm_wrapper form.gymForm {
             margin: 0px 50px;
+            margin-bottom: 50px;
         }
         section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input#uploadFile{
             width: 100%;
+            font-size: 12px;
             
          
         }
