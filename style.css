@@ -122,9 +122,9 @@ section#gymForm_section .gymForm_wrapper .buttonTabs li:hover {
 }
 
 section#gymForm_section .gymForm_wrapper form.gymForm {
-    margin-left: 35px;
+    margin-left: 10px;
     margin-bottom: 50px;
-    margin-right: 35px;
+    margin-right: 10px;
 }
 
 section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item input,
@@ -203,16 +203,25 @@ section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_
         font-weight: 300;
     }
 }
-@media only screen and (max-width: 820) {
+@media only screen and (max-width: 991px) {
+      section#gymForm_section .gymForm_wrapper .buttonTabs li{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 820px) {
     .list_content_side h2 {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
     }
+  
 }
 @media only screen and (max-width: 768px) {
     section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_item {
         margin-right: 0px;
         width: 100%;
+    }
+    section#gymForm_section .gymForm_wrapper .buttonTabs li{
+        font-size: 16px;
     }
     .list_content_side h2 {
         font-size: 32px;
