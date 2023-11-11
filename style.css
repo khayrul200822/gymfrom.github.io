@@ -68,6 +68,10 @@ section#gymForm_section .gymForm_wrapper .all_listing .search_box .search_icon {
     color: #e0e0e0;
     font-size: 16px;
 }
+.list_box_upper {
+    border-radius: 10px;
+    overflow: hidden;
+}
 .list_info_side {
     background: linear-gradient(180deg, #ff4600 0%, #ff8a00 100%);
 }
@@ -246,7 +250,7 @@ section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_
         background: black;
     }
     .list_box-footer .right_side svg{
-        width: 60%;
+        width: 30%;
     }
     .list_box-footer .right_side {
         min-width: 80px;
@@ -265,6 +269,6 @@ section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_
     }
     .list_logo_side {
         background-color: white;
-        padding: 30px 30px;
+        padding: 20px 20px;
     }
 }
