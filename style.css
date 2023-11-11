@@ -115,6 +115,7 @@ section#gymForm_section .gymForm_wrapper .buttonTabs li {
     justify-content: center;
     border: 1px solid transparent;
     transition: all 0.3s;
+    border-radius: 10px;
 }
 
 section#gymForm_section .gymForm_wrapper .buttonTabs li:hover {
@@ -222,6 +223,7 @@ section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_
     }
     section#gymForm_section .gymForm_wrapper .buttonTabs li{
         font-size: 16px;
+        padding: 10px 20px;
     }
     .list_content_side h2 {
         font-size: 32px;
@@ -231,6 +233,24 @@ section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_
        
         font-size: 40px;
        
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm{
+        position: relative;
+    }
+    section#gymForm_section .gymForm_wrapper form.gymForm .submitButton {
+        position: fixed;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        padding: 25px;
+        background: black;
+    }
+    .list_box-footer .right_side svg{
+        width: 60%;
+    }
+    .list_box-footer .right_side {
+        min-width: 80px;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 640px) {
