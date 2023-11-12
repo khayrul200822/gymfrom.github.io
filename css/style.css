@@ -273,6 +273,6 @@ section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_
 }
 @media only screen and (max-width: 500px) {
    div#all-Listings {
-    margin: 0px 10px;
+    margin: 0px;
 } 
 }
