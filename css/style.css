@@ -179,7 +179,13 @@ section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_
     font-size: 12px;
 }
 
-/**************** responsive color here **************/
+/**************** responsive code here **************/
+
+@media only screen and (min-width: 1300px) {
+div#all-Listings {
+    margin: 0px 100px;
+}
+}
 @media only screen and (max-width: 1140px) {
     .list_content_side h2 {
         font-size: 25px;
