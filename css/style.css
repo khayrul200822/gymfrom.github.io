@@ -263,10 +263,8 @@ section#gymForm_section .gymForm_wrapper form.gymForm .inputItems .single_input_
         font-size: 20px;
         font-weight: 400;
     }
-    .list_info_side span:nth-child(2) {
-       
+    .list_info_side span:nth-child(2) {     
         font-size: 20px;
-       
     }
     .list_logo_side {
         background-color: white;

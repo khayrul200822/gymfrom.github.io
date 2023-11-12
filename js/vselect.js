@@ -1,4 +1,3 @@
-import $ from "jquery";
 
 $.fn.vSelect = function(s) {
   let vSelectElms = [];
